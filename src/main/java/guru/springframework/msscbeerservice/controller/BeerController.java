@@ -1,10 +1,13 @@
 package guru.springframework.msscbeerservice.controller;
 
 import guru.springframework.msscbeerservice.model.BeerDto;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 @RestController
@@ -25,4 +28,10 @@ public class BeerController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void update(@PathVariable UUID beerId, @RequestBody BeerDto beerDto){
     }
+
+    @DeleteMapping("/{beerId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void delete(@PathVariable UUID beerId){
+    }
+
 }
