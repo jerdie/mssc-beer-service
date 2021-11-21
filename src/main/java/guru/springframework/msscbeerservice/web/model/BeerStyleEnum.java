@@ -1,4 +1,4 @@
-package guru.springframework.msscbeerservice.model;
+package guru.springframework.msscbeerservice.web.model;
 
 /**
  * Created by jt on 2019-04-23.

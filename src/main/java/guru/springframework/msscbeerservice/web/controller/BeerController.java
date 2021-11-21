@@ -1,14 +1,11 @@
-package guru.springframework.msscbeerservice.controller;
+package guru.springframework.msscbeerservice.web.controller;
 
-import guru.springframework.msscbeerservice.model.BeerDto;
-import org.springframework.http.HttpHeaders;
+import guru.springframework.msscbeerservice.web.model.BeerDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.UUID;
 
 @RestController
